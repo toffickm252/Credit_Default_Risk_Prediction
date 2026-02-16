@@ -1,0 +1,25 @@
+HYPERPARAMETER TUNING - Random Forest
+============================================================
+
+Best Parameters:
+  n_estimators: 300
+  min_samples_split: 10
+  min_samples_leaf: 4
+  max_features: sqrt
+  max_depth: 30
+  bootstrap: True
+
+Best CV F1: 0.9278
+
+Final Test Performance:
+  F1: 0.7727, ROC-AUC: 0.9986
+  Precision: 0.7083, Recall: 0.8500
+
+              precision    recall  f1-score   support
+
+  Legitimate       1.00      1.00      1.00     11373
+       Fraud       0.71      0.85      0.77        20
+
+    accuracy                           1.00     11393
+   macro avg       0.85      0.92      0.89     11393
+weighted avg       1.00      1.00      1.00     11393
